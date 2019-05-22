@@ -20,7 +20,7 @@ export default class StoryDisplay extends Component {
 					<div class="love-story">
 						<h3 class="love-title py-2">I am a title</h3>
 						<p class="love-content pt-2 pb-2"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae suscipit, mollitia saepe natus voluptatem, provident! Cupiditate animi quidem deserunt aspernatur sapiente sit at, cumque magnam laudantium nesciunt, pariatur. Ipsam sint ipsa neque fuga harum dignissimos, cupiditate cum voluptatibus id! Quasi, quis a quisquam necessitatibus ea at. Modi aliquam quia suscipit rem! Deserunt cupiditate deleniti, dolore quia tempore excepturi quisquam nemo architecto nam praesentium eos. Enim dolor aliquid necessitatibus corrupti ex, sit minus beatae vel animi eum repellendus suscipit pariatur odio, dignissimos laboriosam voluptatem nobis voluptate esse ipsam tempora repellat consequuntur iste modi eveniet! Ullam incidunt esse ducimus ab, eligendi officia!
-							<span id="view-more"><a href="">...View More</a></span>
+							<span id="view-more"><a href="abc">...View More</a></span>
 						</p>
 					</div>
 

@@ -1,6 +1,22 @@
 import React, { Component } from 'react'
 
-export default class Header extends Component {
+
+const API_KEY = "e9834a81b620a64968841e24c66a7d1b252511384d7baea319aa009614baf4da";
+
+class Header extends Component {
+constructor(){
+	super();
+	this.state = {
+		image: []
+	} 
+}
+
+	componentWillMount(){
+		fetch(`https://api.unsplash.com/search/photos?page=1&?per_page=5&query=valentine-love&client_id=${API_KEY}`)
+		.then(result => {return result.json()})
+		.then(data => this.setState({image: data}))
+	}
+
   render() {
     return (
         <div class="header">
@@ -28,14 +44,19 @@ export default class Header extends Component {
 						</div>
 						
 					</div>
-
+{/* 
 					<div class="row">
 						
-					</div>
+					</div> */}
 				</div>
 
 				<div class="col-lg-8 col-md-8 col-sm-12 slider">
-					 This is the slider area
+					 {/* This is the slider area */}
+					 <img src="" alt=""/>
+					 <img src="" alt=""/>
+					 <img src="" alt=""/>
+					 <img src="" alt=""/>
+					 <img src="" alt=""/>
 				</div>
 			</div>
 
@@ -45,3 +66,5 @@ export default class Header extends Component {
     )
   }
 }
+
+export default Header;
