@@ -3,8 +3,22 @@ import Modal from 'react-responsive-modal';
 
 
 class Form extends Component {
-	state = {
-		open: false
+	constructor(){
+		super();
+		this.state = {
+		open: false,
+		// postTitle: '',
+		// postContent: '',
+		firstName: ''
+		// lastName: '',
+		// userName: ''
+		}
+
+		this.onChange = this.onChange.bind(this);
+	}
+	
+	onChange = (e) => {
+		this.setState({[e.target.name]: e.target.value});
 	}
 
 	onOpenModal = () => {
@@ -37,18 +51,18 @@ class Form extends Component {
 		  <div className="form-group userName">
 		  <div className="col-6">
 		  <label htmlFor="first-name">First name:</label>
-		  <input class="form-control" type="text" name="" id=""/>
+		  <input class="form-control" type="text" name="" id="" value={this.state.firstName} onChange={this.onChange}/>
 		  </div>
 
 		  <div className="col-6">
 		  <label htmlFor="last-name">Last name:</label>
-		  <input class="form-control" type="text" name="" id=""/>
+		  <input class="form-control" type="text" name="" id="" value={this.state.lastName}/>
 		  </div>
 		  </div>
 
 		  <div className="form-group userName col-6">
 		  <label htmlFor="user-name">Username:</label>
-		  <input class="form-control" type="text" name="" id=""/>
+		  <input class="form-control" type="text" name="" id="" value={this.state.userName}/>
 		  </div>
 
 		  <div className="form-group gender">
@@ -62,14 +76,14 @@ class Form extends Component {
 		  <div className="form-group post-title">
 		  <div className="col-12">
 		  <label htmlFor="post-title">Post Title:</label>
-		  <input class="form-control" type="text" name="" id=""/>
+		  <input class="form-control" type="text" name="" id="" value={this.state.postTitle}/>
 		  </div>
 		  </div>
 
 		  <div className="form-group post-title">
 		  <div className="col-12">
 		  <label htmlFor="post-content">Post Content:</label>
-		  <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+		  <textarea class="form-control" name="" id="" cols="30" rows="10" value={this.state.postContent}></textarea>
 		  </div>
 		  </div>
 
