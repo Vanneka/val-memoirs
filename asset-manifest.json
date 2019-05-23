@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/val-memoirs/static/css/main.541e984a.chunk.css",
+    "main.js": "/val-memoirs/static/js/main.7ed12684.chunk.js",
+    "main.js.map": "/val-memoirs/static/js/main.7ed12684.chunk.js.map",
+    "runtime~main.js": "/val-memoirs/static/js/runtime~main.6989fa7f.js",
+    "runtime~main.js.map": "/val-memoirs/static/js/runtime~main.6989fa7f.js.map",
+    "static/css/2.d2e2e5fa.chunk.css": "/val-memoirs/static/css/2.d2e2e5fa.chunk.css",
+    "static/js/2.bfe09438.chunk.js": "/val-memoirs/static/js/2.bfe09438.chunk.js",
+    "static/js/2.bfe09438.chunk.js.map": "/val-memoirs/static/js/2.bfe09438.chunk.js.map",
+    "index.html": "/val-memoirs/index.html",
+    "precache-manifest.1344e6e1327b81811fd8417422a5575c.js": "/val-memoirs/precache-manifest.1344e6e1327b81811fd8417422a5575c.js",
+    "service-worker.js": "/val-memoirs/service-worker.js",
+    "static/css/2.d2e2e5fa.chunk.css.map": "/val-memoirs/static/css/2.d2e2e5fa.chunk.css.map",
+    "static/css/main.541e984a.chunk.css.map": "/val-memoirs/static/css/main.541e984a.chunk.css.map"
+  }
+}
